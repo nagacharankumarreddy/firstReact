@@ -4,14 +4,14 @@ class Counters extends Component {
   state = {
     counters: [
       { id: 1, value: 0 },
-      { id: 2, value: 0 },
-      { id: 3, value: 0 },
+      { id: 2, value:11 },
+      { id: 3, value: 2  },
     ],
   };
   render() {
     return (
       <div>
-          {this.state.counters.map(num=> <Counter key={num.id}/>)}
+          {this.state.counters.map(num=> <Counter key={num.id} value={num.value}/>)}
         
       </div>
     );
