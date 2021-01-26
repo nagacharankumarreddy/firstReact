@@ -9,7 +9,7 @@ class Counters extends Component {
     ],
   };
   handleDelete= (counterId)=>{
-    console.log("ondelete event",counterId);
+    console.log("ondelete event", counterId);
     
   }
   render() {
