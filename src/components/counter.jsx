@@ -19,9 +19,9 @@ class Counter extends Component {
     return this.state.value;
   }
   render() {
-    console.log('props',this.props);
     return (
       <div>
+        {/*for children  this.props.children*/}
         <span style={this.styles} className={this.getBadgeClasses()}>
           {this.getCount()}
         </span>
@@ -38,7 +38,11 @@ class Counter extends Component {
         >
           Decrement
         </button>
-        {/* <ul>
+        &nbsp;&nbsp;&nbsp;
+        <button className="btn btn-danger btn-sm" onClick={() =>this.props.onDelete(this.props.id)}>
+          Delete
+        </button>
+        {/*for displaying lists <ul>
           {this.state.nums.map((num) => (
             <li key={num}>{num}</li>
           ))}
